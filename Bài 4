@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Form</title>
+</head>
+<body>
+
+<form action="#" method="post">
+    <style>
+        .form-row {
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+        }
+        .form-label {
+            display: inline-block;
+            width: 150px; /* Chiều rộng cố định cho nhãn để căn chỉnh */
+            padding-right: 10px;
+            text-align: left;
+        }
+        .form-input {
+            width: 300px; /* Chiều rộng cố định cho input */
+            padding: 2px;
+            border: 1px solid #aaa;
+        }
+        .form-textarea {
+            width: 98%;
+            height: 100px;
+            padding: 5px;
+            border: 1px solid #aaa;
+        }
+    </style>
+
+    <fieldset>
+        <legend><h3 style="margin: 0; padding-bottom: 5px;">Basic Info</h3></legend>
+
+        <div class="form-row">
+            <label for="employeeID" class="form-label">Employee ID</label>
+            <input type="text" id="employeeID" name="employeeID" value="9" readonly class="form-input" style="border: none;">
+        </div>
+
+        <div class="form-row">
+            <label for="lastName" class="form-label">Last Name</label>
+            <input type="text" id="lastName" name="lastName" value="Dodsworth" class="form-input">
+        </div>
+
+        <div class="form-row">
+            <label for="firstName" class="form-label">First Name</label>
+            <input type="text" id="firstName" name="firstName" value="Anne" class="form-input">
+            </div>
+
+        <div class="form-row" style="align-items: flex-start;">
+            <label class="form-label" style="padding-top: 5px;">Gender</label>
+            <div>
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="xxx" name="gender" value="XXX">
+                <label for="xxx">XXX</label><br>
+                <input type="radio" id="zzz" name="gender" value="ZZZ" checked>
+                <label for="zzz">ZZZ</label>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <label for="title" class="form-label">Title</label>
+            <input type="text" id="title" name="title" value="Sales Representative" class="form-input">
+        </div>
+
+        <div class="form-row">
+            <label for="suffix" class="form-label">Suffix</label>
+            <input type="text" id="suffix" name="suffix" value="Ms." class="form-input">
+        </div>
+
+        <div class="form-row">
+            <label for="birthDate" class="form-label">BirthDate</label>
+            <input type="text" id="birthDate" name="birthDate" value="1969-07-02 00:00:00" class="form-input"> (?)
+        </div>
+
+        <div class="form-row">
+            <label for="hireDate" class="form-label">HireDate</label>
+            <input type="text" id="hireDate" name="hireDate" value="1994-11-15 00:00:00" class="form-input">
+        </div>
+
+        <div class="form-row">
+            <label for="ssn" class="form-label">SSN # (if applicable)</label>
+            <input type="text" id="ssn" name="ssn" class="form-input">
+            </div>
+
+        <div class="form-row">
+            <label for="reportsTo" class="form-label">Reports To</label>
+            <select id="reportsTo" name="reportsTo" style="padding: 2px;">
+                <option value="Buchanan" selected>Buchanan</option>
+                <option value="Davolio">Davolio</option>
+                <option value="Fuller">Fuller</option>
+            </select>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend><h3 style="margin: 0; padding-bottom: 5px;">Contact Info</h3></legend>
+
+        <div class="form-row">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" name="email" value="name@example.com" class="form-input">
+        </div>
+
+        <div class="form-row">
+            <label for="address" class="form-label">Address</label>
+            <input type="text" id="address" name="address" value="7 Houndstooth Rd." class="form-input">
+        </div>
+
+        <div class="form-row">
+            <label for="city" class="form-label">City</label>
+            <input type="text" id="city" name="city" value="London" class="form-input">
+        </div>
+
+        <div class="form-row">
+            <label for="region" class="form-label">Region</label>
+            <input type="text" id="region" name="region" value="" class="form-input">
+        </div>
+
+        <div class="form-row">
+            <label for="postalCode" class="form-label">Postal Code</label>
+            <input type="text" id="postalCode" name="postalCode" value="WG2 7LT" class="form-input">
+        </div>
+
+        <div class="form-row">
+            <label for="country" class="form-label">Country</label>
+            <select id="country" name="country" style="padding: 2px;">
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="Russia" selected>Russian Federation</option>
+            </select>
+        </div>
+
+        <div class="form-row">
+            <label for="homePhone" class="form-label">US Home Phone</label>
+            <input type="tel" id="homePhone" name="homePhone" value="(234) 234-2342" class="form-input">
+        </div>
+
+        <div class="form-row">
+            <label for="photo" class="form-label">Photo</label>
+            <input type="text" id="photo" name="photo" value="EmpID9.bmp" class="form-input">
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend><h3 style="margin: 0; padding-bottom: 5px;">Optional Info</h3></legend>
+
+        <div style="border: 1px solid #aaa; padding: 5px; margin-bottom: 5px; background-color: #f0f0f0; text-align: left;">
+            B | *I* | <u>U</u> | S |         </div>
+
+        <div class="form-row" style="align-items: flex-start;">
+            <label for="notes" class="form-label" style="padding-top: 5px;">Notes</label>
+            <textarea id="notes" name="notes" class="form-textarea" style="width: 70%;">Anne has a BA degree in English from St. Lawrence College.
+She is fluent in French and German.ZZZ</textarea>
+        </div>
+
+        <div class="form-row">
+            <label class="form-label">Preferred Shift</label>
+            <div>
+                <input type="radio" id="regular" name="shift" value="Regular" checked>
+                <label for="regular">Regular</label><br>
+                <input type="radio" id="gravyYard" name="shift" value="Gravy Yard">
+                <label for="gravyYard">Gravy Yard</label>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <label class="form-label">Active?</label>
+            <input type="checkbox" id="active" name="active" checked>
+        </div>
+        
+        <div class="form-row">
+            <label for="captcha" class="form-label">Are you human?</label>
+            <div style="border: 1px solid #000; padding: 5px; background-color: #e0e0e0; display: inline-block;">
+                T | I | ◻️ | 0 | ∆ | & | W | ◻️
+            </div>
+            <span style="margin-left: 10px; font-size: small;">Click to change</span>
+        </div>
+    </fieldset>
+    
+    <br>
+    
+    <div style="text-align: right; padding-right: 15px;">
+        <span style="float: left; color: red;">* required</span>
+        <button type="submit">☑️ Submit</button>
+        <button type="reset">❌ Cancel</button>
+    </div>
+</form>
+
+</body>
+</html>
