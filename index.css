@@ -1,47 +1,59 @@
-body,
-html {
+* {
   margin: 0;
   padding: 0;
-  font-size: 1em;
-  font-weight: 200;
-  color: white;
+  box-align: border-box;
+  background-color: lightgray;
+}
+
+.header {
+  display: flex;
+  padding: 1px;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.menu {
+  background-color: gray;
+  padding: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  width: 236px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .item {
-  text-align: center;
-  background-color: gray;
-  border: 1px solid white;
-  border-radius: 8px;
-  width: 500px;
-}
-
-.container {
-  width: auto;
-  height: 70vh;
-  border-radius: 20px;
-  padding: 20px;
+  border: 1px solid gray;
+  width: 50vw;
+  height: 200px;
+  border: 1px solid #ccc;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: nowrap;
   align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  background-color: #f0f0f0;
+}
+.item1 {
+  height: 60vw;
+  width: 20vw;
 }
 
-.item1 {
-  height: 100px;
-}
 .item2 {
-  height: 140px;
+  height: 60vw;
+  width: 20vw;
 }
 .item3 {
-  height: 70px;
+  height: 60vw;
+  width: 60vw;
 }
-.item4 {
-  height: 155px;
-}
-.item5 {
-  height: 300px;
-}
-.item6 {
-  height: 100px;
+.footer div {
 }
